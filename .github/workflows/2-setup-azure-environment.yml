@@ -79,7 +79,7 @@ jobs:
 
       # Create pull request from azure-configuration branch to set up next step
       - name: Create azure-configuration pull request 
-        run: ./.github/script/create-workflow-pr.sh
+        run: ./.github/script/create-workflow-pr.sh --pull-first
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_BRANCH: azure-configuration
